@@ -1,5 +1,7 @@
 # nilsson
 
+[![Clojars Project](https://img.shields.io/clojars/v/nilsson/lein-template.svg)](https://clojars.org/nilsson/lein-template)
+
 A Leiningen template for a clojure HTTP API with Postgresql, and ES6+React frontend.
 
 ## Usage
