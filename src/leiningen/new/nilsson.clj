@@ -20,6 +20,7 @@
       ["dev/user.clj" (render "user.clj" data)]
       ["package.json" (render "package.json" data)]
       ["project.clj" (render "project.clj" data)]
+      ["README.md" (render "README.md" data)]
       ["webpack.config.js" (render "webpack.config.js" data)]
       [".gitignore" (render ".gitignore" data)]
       [".babelrc" (render ".babelrc" data)]
