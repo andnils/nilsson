@@ -1,4 +1,4 @@
-(ns {{name}}.component.jetty
+(ns {{name}}.components.jetty
     (:import org.eclipse.jetty.server.Server)
     (:require [com.stuartsierra.component :as component]
               [{{name}}.routes :as routes]
@@ -11,8 +11,7 @@
   (start [component]
     (if (:server component)
       component
-      (let [port (Integer/parseInt (get-in component [:config :port]))
-            options {:join? false :port port}
+      (let [options {:join? false :port (:http-port config)}
             handler (routes/handler (:db component))
             server  (jetty/run-jetty (fn [req] (handler req)) options)]
         (assoc component
