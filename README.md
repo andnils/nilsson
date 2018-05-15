@@ -4,6 +4,7 @@
 
 A Leiningen template for a clojure HTTP API with Postgresql, and ES6+React frontend.
 
+
 ## Usage
 
 To create a new project
