@@ -22,7 +22,8 @@
    [com.stuartsierra.component.repl :refer [reset set-init start stop system]]
    [ragtime.jdbc]
    [ragtime.repl]
-   [{{name}}.system]))
+   [{{name}}.system]
+   [{{name}}.database-migrations]))
 
 
 (clojure.tools.namespace.repl/set-refresh-dirs "dev" "src/main/clj" "src/test/clj")
@@ -31,9 +32,9 @@
 (def dev-config ({{name}}.system/make-config))
 
 (defn db-migrate []
-  ({{name}}.system/db-migrate dev-config))
+  ({{name}}.datbase-migrations/db-migrate dev-config))
 (defn db-rollback []
-  ({{name}}.system/db-rollback dev-config))
+  ({{name}}.database-migrations.system/db-rollback dev-config))
 
 
 (set-init (fn [_] ({{name}}.system/make-system dev-config)))
