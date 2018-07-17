@@ -32,7 +32,7 @@
 (def dev-config ({{name}}.system/make-config))
 
 (defn db-migrate []
-  ({{name}}.datbase-migrations/db-migrate dev-config))
+  ({{name}}.database-migrations/db-migrate dev-config))
 (defn db-rollback []
   ({{name}}.database-migrations.system/db-rollback dev-config))
 
