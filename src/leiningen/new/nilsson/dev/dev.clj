@@ -34,7 +34,7 @@
 (defn db-migrate []
   ({{name}}.database-migrations/db-migrate dev-config))
 (defn db-rollback []
-  ({{name}}.database-migrations.system/db-rollback dev-config))
+  ({{name}}.database-migrations/db-rollback dev-config))
 
 
 (set-init (fn [_] ({{name}}.system/make-system dev-config)))
