@@ -36,5 +36,4 @@
       ["src/main/resources/logback.xml" (render "src/main/resources/logback.xml" data)]
       ["src/main/resources/migrations/001-heroes.up.sql" (render "src/main/resources/migrations/001-heroes.up.sql" data)]
       ["src/main/resources/migrations/001-heroes.down.sql" (render "src/main/resources/migrations/001-heroes.down.sql" data)]
-      ["src/main/sass/main.scss" (render "src/main/sass/main.scss" data)]
       )))

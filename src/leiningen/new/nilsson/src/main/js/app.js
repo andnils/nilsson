@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from './AppContainer.jsx';
-import './../sass/main.scss';
+import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   React.createElement(AppContainer),
