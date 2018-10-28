@@ -4,6 +4,9 @@ TODO: description
 
 ## Usage
 
+You should start with setting up a PostgreSQL database.
+Next, edit `config/private.edn` and set your db connection
+parameters.
 
 Start a REPL
 
@@ -18,6 +21,8 @@ user> (dev)
 :ok
 dev> (start)
 :ok
+dev> (db-migrate)
+...
 ```
 
 

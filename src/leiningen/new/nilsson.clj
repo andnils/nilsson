@@ -18,7 +18,7 @@
       ["src/main/clj/{{sanitized}}/components/c3p0.clj" (render "src/main/clj/xxx/components/c3p0.clj" data)]
       ["src/main/clj/{{sanitized}}/components/jetty.clj" (render "src/main/clj/xxx/components/jetty.clj" data)]
       ["config/config.edn" (render "config/config.edn" data)]
-      ["config/private.edn.template" (render "config/private.edn.template" data)]
+      ["config/private.edn" (render "config/private.edn" data)]
       ["dev/dev.clj" (render "dev/dev.clj" data)]
       ["dev/user.clj" (render "dev/user.clj" data)]
       ["package.json" (render "package.json" data)]

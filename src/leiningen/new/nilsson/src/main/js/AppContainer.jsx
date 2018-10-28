@@ -25,7 +25,7 @@ export class AppContainer extends React.Component {
     return (
       <div>
         <SuperHeroList heroes={heroes}/>
-        { !heroes.length && <p> No data </p> }
+        { !heroes.length && <p> No data. Have you set up your DB properly? See README for more information. </p> }
       </div>
     );
   }

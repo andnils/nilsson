@@ -1,9 +1,0 @@
-;; Make a copy of this file and name if `private.edn`
-;; and enter your settings below.
-
-{ 
- :http-port 3000
- :db-url "jdbc:postgresql:{{name}}"
- :db-user "dbuser1"
- :db-password "DB-PASSWORD"
- }

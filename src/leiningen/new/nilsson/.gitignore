@@ -17,3 +17,5 @@ pom.xml.asc
 /prod/dist/
 /profiles.clj
 /.env
+config/private.edn
+
