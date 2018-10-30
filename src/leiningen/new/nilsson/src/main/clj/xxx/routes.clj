@@ -2,12 +2,14 @@
   (:require [compojure.core :refer [GET PUT POST DELETE routes context]]
             [compojure.route :as route]
             [compojure.coercions :refer [as-int]]
+            [clojure.tools.logging :as log]
             [ring.util.response :refer [response created not-found content-type charset]]
             [ring.middleware.json :refer [wrap-json-body wrap-json-response]]
             [{{name}}.db :as q]))
 
 
 (defn find-hero-by-id [db id]
+  (log/debug "find hero" id)
   (let [hero (first (q/find-hero-by-id db id))]
     (if hero
       (response hero)
