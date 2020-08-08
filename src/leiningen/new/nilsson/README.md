@@ -4,31 +4,29 @@ TODO: description
 
 ## Usage
 
-You should start with setting up a PostgreSQL database.
-Next, edit `config/private.edn` and set your db connection
-parameters.
+Enter you db connection details in `src/config.private.edn`.
+
+Start webpack devserver:
+
+    npm start
 
 Start a REPL
 
 ```shell
-lein repl
+clj -A:dev
 ```
 
 ...and start the system:
 
 ```clojure
-user> (dev)
-:ok
-dev> (start)
-:ok
-dev> (db-migrate)
+user> (reset)
 ...
 ```
 
 
 ## License
 
-Copyright © 2018 <your-name>
+Copyright © 2020 <your-name>
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

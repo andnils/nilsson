@@ -1,0 +1,5 @@
+{
+ :db-info {:connection-uri "jdbc:postgresql://localhost/{{name}}"
+           :user           "{{name}}"
+           :password       "{{name}}"}
+ }

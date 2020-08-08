@@ -1,0 +1,17 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        ring/ring {:mvn/version "1.8.0"}
+        compojure/compojure {:mvn/version "1.6.1"}
+        honeysql/honeysql {:mvn/version "0.9.10"}
+        org.clojure/tools.logging {:mvn/version "0.5.0"}
+        ch.qos.logback/logback-classic {:mvn/version "1.2.3"}
+        org.clojure/java.jdbc {:mvn/version "0.7.5"}
+        org.postgresql/postgresql {:mvn/version "42.2.2"}
+        ; org.flywaydb/flyway-core {:mvn/version "6.0.7"}
+        com.mchange/c3p0 {:mvn/version "0.9.5.2"}
+        aero/aero {:mvn/version "1.1.6"}
+        juxt/clip {:mvn/version "0.16.0"}
+        ring/ring-json {:mvn/version "0.5.0"}}
+ :paths ["src"]
+ :aliases {:dev {:extra-paths ["dev"]
+                 :extra-deps {}}}
+ }

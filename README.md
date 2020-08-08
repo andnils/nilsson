@@ -16,23 +16,26 @@ lein new nilsson <your-project-name>
 Start a REPL
 
 ```shell
-lein repl
+clj -A:dev
 ```
 
 ...and start the system:
 
 ```clojure
-user> (dev)
-:ok
-dev> (start)
+user> (start)
 :ok
 ```
 
+...and compile and serve the ui:
+```shell
+npm install
+npm start
+```
 
 ## License
 
 
-Copyright © 2018 Anders Nilsson
+Copyright © 2020 Anders Nilsson
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

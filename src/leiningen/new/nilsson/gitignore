@@ -1,0 +1,10 @@
+.idea/
+*.iml
+/out/
+/public/js/
+node_modules/
+.cache/
+.cpcache/
+.nrepl-port
+dist
+config.private.edn

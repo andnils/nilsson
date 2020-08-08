@@ -1,13 +1,6 @@
 (ns user
-  "Utility functions to rapidly bootstrap the REPL for interactive
-  development. This file is automatically loaded by Clojure on
-  startup.
+  (:require [juxt.clip.repl :refer [start stop reset set-init! system]]
+            [{{name}}.system :refer [system-config]]))
 
-  Run `(go)` to load all source code, start the component system
-  running, and switch to the `dev` namespace. `(reset)` is an alias
-  for `(go)`.
+(set-init! #(system-config :dev))
 
-  Or run `(dev)` to just load code and switch to `dev` without
-  starting the system."
-  (:require
-   [com.stuartsierra.component.user-helpers :refer [dev go reset]]))

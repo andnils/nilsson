@@ -1,0 +1,15 @@
+{:secrets #include "config.private.edn"
+
+ :components
+ {:db
+  {:start ({{name}}.components.db/start #ref [:secrets :db-info])
+   ;:post-start (migrate)
+   :stop  {{name}}.components.db/stop}
+
+  :handler
+  {:start ({{name}}.routes/handler (clip/ref :db))}
+
+  :http
+  {:start ({{name}}.components.http/start {:handler (clip/ref :handler)
+                                           :port    3000})
+   :stop  {{name}}.components.http/stop}}}
