@@ -24,7 +24,7 @@
              ["ui/src/index.html" (render "ui/src/index.html" data)]
              ["ui/src/index.js" (render "ui/src/index.js" data)]
              ["ui/src/style/style.css" (render "ui/src/style/style.css" data)]
-             ["ui/.babelrc" (render "ui/.babelrc" data)]
+             ["ui/.babelrc" (render "ui/babelrc" data)]
              ["ui/package.json" (render "ui/package.json" data)]
              ["ui/webpack.config.js" (render "ui/webpack.config.js" data)]
              [".dir-locals.el" (render "dir-locals.el" data)]

@@ -1,4 +1,4 @@
-(defproject nilsson/lein-template "1.0.0"
+(defproject nilsson/lein-template "1.0.1"
   :description "A leiningen template for a clojure backend with postgresql database, and ES6+React frontend."
   :url "https://github.com/andnils/nilsson"
   :license {:name "Eclipse Public License"
