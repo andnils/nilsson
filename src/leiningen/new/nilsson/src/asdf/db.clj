@@ -14,7 +14,7 @@
 (defn list-projects [db]
   (jdbc/query db (-> (select :id :name)
                      (from :project)
-                     (sql/format query))))
+                     (sql/format))))
 
 (defn create-project [db project]
   (log/debug project)
