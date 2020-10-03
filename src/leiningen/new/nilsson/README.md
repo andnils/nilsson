@@ -8,6 +8,8 @@ Enter you db connection details in `src/config.private.edn`.
 
 Start webpack devserver:
 
+    cd ui/
+    npm ci
     npm start
 
 Start a REPL
